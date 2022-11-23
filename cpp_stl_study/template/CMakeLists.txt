@@ -1,15 +1,18 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(template_study)
 
+message("HI IM ${PROJECT_NAME}")
+
 include_directories(
   include
 )
 
-set(library_name template_study_lib)
+set(library_name ${PROJECT_NAME}_lib)
+set(executable_name ${PROJECT_NAME})
 
 add_library(${library_name}
   src/example_class.cpp
 )
 
-add_executable(template_study src/main.cpp)
-target_link_libraries(template_study ${library_name})
+add_executable(${executable_name} src/main.cpp)
+target_link_libraries(${executable_name} ${library_name})
