@@ -5,4 +5,4 @@
 ![image](./images/example.png)
 
 # CMakeList 예시
-![file](./examples/CMakeLists.txt)
+[CMakeList.txt](./examples/CMakeLists.txt)
