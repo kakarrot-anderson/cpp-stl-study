@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
         std::cout << " " << element;
     std::cout << std::endl;
 
-    list3.push_front(0);
+    list3.push_front(1);
     for (const auto& element : list3)
         std::cout << " " << element;
     std::cout << std::endl;
@@ -21,8 +21,13 @@ int main(int argc, char const *argv[])
         std::cout << " " << element;
     std::cout << std::endl;
 
+    list3.insert(++list3.begin(), 3,3); 
+    for (const auto& element : list3)
+        std::cout << " " << element;
+    std::cout << std::endl;
+
     std::cout << list3.front() << std::endl;
-  
+    
     std::cout << list3.back() << std::endl;
 
     list3.pop_front(); 
@@ -39,9 +44,5 @@ int main(int argc, char const *argv[])
   
     std::cout << list3.empty() << std::endl; 
       
-    
-
-    
-
   return 0;
 }
