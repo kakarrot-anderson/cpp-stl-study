@@ -3,6 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
+    //prime number
     std::array<int, 5> Arr = {2, 3, 5, 7, 11};
     std::array<int, 0> AmptyArr;
 
